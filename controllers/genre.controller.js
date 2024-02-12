@@ -14,7 +14,7 @@ class GenreController {
         const startIndex = (page - 1) * limit;
         const endIndex = page * limit;
 
-        const genres = await db.getMovie()
+        const genres = await db.getGenre()
 
         const paginatedResults = genres.slice(startIndex, endIndex);
 

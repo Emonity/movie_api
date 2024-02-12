@@ -232,8 +232,6 @@ class databaseClass {
         }
     }
 
-    // _______________________________________________________________________________
-
     /**
      *
      * @returns {Promise<*|*[]|null>}
@@ -344,8 +342,8 @@ class databaseClass {
 
     /**
      * Удаление жанра
-     * @param movie_id
      * @returns {Promise<*|string|null>}
+     * @param genre_id
      */
     async deleteGenre(genre_id) {
         try {
@@ -377,8 +375,8 @@ class databaseClass {
 
     /**
      * Получение фильма по id
-     * @param movie_id
      * @returns {Promise<*|string|null>}
+     * @param genre_id
      */
     async getOneGenre(genre_id) {
         try {
